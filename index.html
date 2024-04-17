@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In to Guardians Galaxy Gateways</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- Boot strap Css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADDCAMAAACxkIT5AAAAkFBMVEX////u7u7t7e0AAAD39/f19fX4+Pj29vbs7Oz+/v7v7+/7+/vy8vLm5uaampq6urrf39/T09PKysq0tLRsbGyTk5PBwcFhYWHZ2dmurq6JiYmMjIypqalxcXFmZmbNzc1FRUV8fHw8PDwtLS15eXmhoaEuLi41NTUVFRUhISFSUlJJSUlQUFAODg4eHh4mJibaAh4kAAAVGElEQVR4nO1daXuzLBPFIKiAidnMniZt0qbp9v//3QuoKSq4RW3u93r4dGqzOCcwMwcGBEC2gcXbIMKWxJ7ExICZxLQQI4lxhAdZbEvsSOxIbEuMJMZZbEWYSswKsScxMWArbzD4j4P/OPiPg/84SHPgDnhz438r2JI45kDF4g1ubHchju3O4ZgDiWMOJI7tzuHY1kIc2yqNUbGlGDnIG5yyOG89yFuvYDZQLDZgNFCsV7CjMGErTEiLByiHpZUDVojz1hPFYhMTg7jnx3Yr2DQKSIVRkBoRuVEQc6CMCFsZEblRMKg+CmjhKIj5yI0Iq3sODF6hMgc1PMF/HPzHwT0cqH5QdZZGn+gqPrFCdMhHhAhjwhhC0ed4CDFG4uuG6FAcERSfqIkOeZ+oGpxEyEYRYUArYCUixJhy24m7fAq3w/VxJ9ppPd+OJmOfMIdF78UDJToMlChQAdeODgkHNUfEHRFhMBruDzBul5+Xt9ef76/4z9fFeupjEPfqhtGh+ijoPU9kyEbj4VWY+r04nkdLC2EPI2Q7iAKMWBBu14s38e/DJnT5BWL9f+XK3NbxXPz6b+vRmCAHxX3ell8WeUY+Rvj1YDIXPL0fQ4Lw/xUHT0fe3Z/nY/EfLK8b9IIlXx9sBQ+LEe2Tg+70AsfB5gLhfuVHZlTSCx5ywyN/12xSLSLcpxesXA+IcO38YKDHaMvH+D6McM38YLnmvWHtR1bK60yPHzpHcjd8CGxdx2vEAUUoXHAGx1pb/w0Ogh2Eu7HDSPM8kdnBnEeKSWzHv8UBcQL+Ew4dj/za3ShXJhSMXuBraLN/jAPOwB7CM2hLL4TP8C10WA96oXbGbIoIbMC92TCy26AXCudQNHoh/IbXpVOsHZrOocQW53rDHZ6AgBF355iqo0B+qIrj2ChxHBut5FePc4hUnojBlH8oZUU9oEpvSPcAtbWpF5zlAV598wxSozlVgT3euUYOeXy9wBD34yNpq8ET3DGvHBzg3i/zCn+eK6PgGe4jm7qYWwdDTjAuzpv/mgO6FffY4foC4l1h1w0HtfXCQB8RZtwTsE7XFwjawB8/wpnooIkI1fQCEc0CHm+8BwjsiT/4r67HTGKqw2j5A7f8e+PrWF5HBuxIbEtsS+xIjCVGBsz4p4MlhFMsMb9Ok+sZ7ElMDDgxWFpvzJGKR4TOG9o8Ii4jrGomQ3RotL4Q6yT8AY8OaSEqtp0n2kN4iCRe9/PK7AgXxhmFv8uV6Q7OGOlpbt2yt/DNfTgOrnBDSX/rC04IodsWB3fphVt08D7g1qm1vlBXL2SjABtDGCTX71xz9X4dpBVhYsBMYqrBbPAMQ5C9jiTGKs5FBEeJCLnoQGRE8FQsPT+JPL8L4ROKsHo9hb3Y8+uxFVuvdIqmeoG4LzCaLKsUERrrBZCODp7/DifoMfQCcnkvQH9Qh0L8H/hkV+agy1wZHTgFf1KLw/xLnJH8NQdXLmj/qB6J+RCytji4Qy+c4Bb9WT0SW8Ifmly/Uy/UjAhEYo9jPIRDEOPbdRkFCC7EjsS2xLbEjsRYYlSIqcRM3s8SfqIYJ9drRoe0Xqg+IpKej6ZwFr3euMbSgV5QMZjCnV1bL6gG35kn8q54YH9ch+LM4dn5w1yZfENfoxH6rcVxFnDi/BkHdAGf2J/XIxHyDlX91K9e2MIz0tZo9qAXlBpNsoSLyNZ79IIn/SPJ40wUSGEmvvrOiOAoEaF5dOB+8WyTTHTIYaORQOkUNfUCeoU06gHKKOhRL6h4BpfsD/SCs4FPNz7+um4dw2dEes+VuX7fgYfhAIzgEPXOgfMMS9Yaet2/YO9hQHrWC+wMp0wTEXLRoQO9oKvgt3x4te/SCzUjAsdUxIT89eKIgHIRIa8X7AoRAWs8P1jBCTBEhJLo0FAvgKNIS0wRoU+98Ivf3qOb7kkvkABuwKPVrS95xlbEQcu5Mk/RvYfjACygS3rjgD2JdcUCuwlDKKnI7I8DH25QIw6a6AX8cYnsNkQENF7Nj6f5dEmFfS3qhZI9XSfoWu3ohZKIIOduZHqueQ3vAXR8/E5K8+F1KOc8O9YLMWYBnANzRDBGB6B0isojYgGNVbrO8grT7Wu28gFlpBW94DHRlPn0VMUu3QkF04te8OEWmzzBGura124VoKRevwkHhGGRCI1Hq+1qtZqGQWw3SXsFV5RE9pIrH6HJGwbfWgpkezuOrEYcUIZwEA5nz7eP+plGe10Y8u30Gsvi0g8HGK4NHAzMDETtMByL9SFSiwM2Pb6qH3INozEF7Okz/NhSlYOxWPfsQS9seYqYqke64U0ZB6ItzmPiJLvYCvWCqOlcDp/Tb5+NcayNVpfoyoYq6wuvHw30gnQyxKO8RQ6H0GJMvz9x+rp4s4cYw4sqHPD2tV/5FIv9fLZ8r03E5zgKRsJb4/B0ybxzw82nHmbYnX/dLl7GDpMGUGKfYYBiLO+uEHsRjnp+0gMqjAg24YJRrxHQsSIHor3vpgGOV2pzOZLoAeEs+5bLOe55IMh80zLJo4gP13b1UeBG162c3SBnt4rxDg509SYck2UNDkR7OYZUwwFzSLjLvfgwtVE0CoIcO8/xzsmBZS8gMnDQXq7M4Em7wip3F0yyfbe8fQ7HHh+QNw54FJicNK+LyrW5fU/ZBES0ScIBG8W4Sw5CGDKjTmJUnx+UtOtwbDss+i3d+Yv2NVvR0RgdPWv/O084IAieanNQVy/soK2pR/rFS70JpW2/FYV9oe5Hli3kjtI9fxn+Gy16iiiAdvCGq+qFkiiQxQwewQ1H15HEWP6BuGBs1BVEe92ZTISit5O5+b97nHh7MBEFOmURIYWB0imSHmAaEQMx4qPhVjCDRJzxW1MWCtqoMOishWiOtIMn/xiUjAI3nyNVzRP5j+xpPUF6H8u5AxIKW6jsb1m821pP0FaubL8u9HZnsPvZLwfU+uVgBQPSIQc8BdlW4kDcSY9tCJSZJR+uWId6gUffIMH6NYVfjIwuvvX2k44CcIca6IXIw9NSDNYwfz2JCFksdrf108ZIvSE6u4AqxtxwXi+kokN2RDx/UnNEyGE7n/F20VYotdbgbCEpGAVqRGiiFygc2qWeQMWTgojfVjvb6TlmtBTxu7NcOeD5Ry0OxKRTx03O66Xn2Ytm1O7mYAr9Knar2AvfO6Vg4lgZDgi47DvUC3NY/8w4Rhonz+Xt1QWa/Qu71wZ6oaITpddXWiUiZDAI9GLv/rZDCMnvwuqN4jl0K4e6Ar2Q9IDUiGAvM5T0gPLooK6sDTuhYGQTzUq0x6ZwSTSjwDVEB5WDsjyRZ4kbVr7nW7fa6i0P5SbVbDNXfyqERyZwxDrKlUnAs9BmHCCCt+0y8DaOblTDgcUz+q444MI51HAgx71VzIGD/HWrqcK2YL+zZXH53JFe4ONsbOX3Oy+n59UkLg/LR4eIA9ZubNj87lnQ7Xdm7zPUkV7gWtDx0hEB+8N4GnXtU1N0wKxdl3hy5TeoESEdHcDnArSmF9zfGSQxIobQi3FSu6/KorWLdNGBsW2ro+Dkl9Qm8R6weI56/q1nGCJCA72whpnafT99e/M4CKleAUx/2mTg6AKzJ7jVre8uneXKp+80B05uzmyV5WDZanq0Nu1xznDAf6yuOJi9pTmw8+P8Z6Ry4O5bJOB76KIqtUlE5vRd6YX9Ib3WgCaaW32bACdywF6bweAw5QG46hnTZ9iRXkB08UHTnh9oV5oPY+BRscOjvXYSdQvaKKDDeAgxak8vDJTogBYfziCtF3z9LS8CMG7PEbydXYdUrVYVPZ+dIVMiwqBFveAoHCQj3jRF0p48OI4RIvXO0URD2CBPrMjBAWU5sFuzVds+pqIUS7SH4eAtx0GXS0o/c3m+CharyQ6tw8GmCQeV9AKa/bD8fueCUrS72mkS1/JxPxwMD8cIF1arJj4AHX/9QVt6IYkCR5ifKcKdrCLMQn7/1Oau3qbW6kNcGuIKESHCYAdjvVApOpj1ghoRYjyHIK0XBLY/2iZgMY2/FzPHnSbhd4ZKI8JNL+zfUhEhwu3ohZXQTJbCgRyEdauQSghY+TaLIyEYKZVHH3apJ7jliddrZ7nySFQmZjkYgPZWk/YjcbiAFVVnLtNp5guqzsHbrDMOnuBYw4HHWrH/ayeL1KLqZBrMc3LTLz098sYBXHemF1wYatcXCopkKrbLMUx8gCXCgK6SJSBVn0njwW2LeiEVBZDLnbNmpgih+wh4HgZxFGAIe2RryDHHXkW9gJZwivPXa+mFgaXXCxa5nLTrC+yOgovFNsC3alXkrsz1viNQUS+QEXwiBr2giw4qB6V1KPbhw9HNrdsNc4S3zcTlQeBWt15c0rYFFfNENuS+o6taHHSCWMOB00gl76eDWAskHJCnwjesq3KAThfSWT0S16RBnoMGqyfPm0k8GzdQORgXk1aVA+f50+6sHolMknPR1PWFsJ79L8epj277F+SX3cZC4QaID1BRLyC4RrXqkZBojGLeaISxiqmK6QCeafY6qUPAbBtQIPw7dcQWSGbLz7EldriHLqzYsMUqs3g9ZvKbDdgO4MgzvQarmEY4rReUiKDTC1wkznBGLxT/dkr7nq2Wzu9zCAx7PIu2gQyq6QU0gj4o1guD5noBgNPFSUUEy3KqlOBdxP6+5EksxftcC6bgxqRSnojFMkiHtftiZT/NASpTC9+77TJejayy15eZt0CE1Z49QGUtbXcc+HIfQWrfRpFLPGxCXz5pqfp+Z2qWoatKHJBAZhId7l/gMj6jFwyJzc9iu8Qg9vy6Z1jKL0s4+I0OmOkWLWRbsyp6gU1lLW0dvSB9JZb+EZVjsZuWpq9Tb5pdU90PJ8QD1JZeWr7IQXps57CDjfWtR1DlRsEJetWMSTBIekA2IiQ9IB0dYpLTeoGhcH2QFXjvh9MwDOIPZUrPr3cmjCHpulbTC18zZf9CkV4ofWadvnaf+NEjRjL1Nww5QM7+8JSBEV0tTi0OgH54vVTKEwM4ZVpP0NpeX+f6o+FAi+85G0i7VluNg7mcbOmSAy6T/R448HRzCItKHFwWtj4itLbf2SJyMFTYv5CqR8o94fjGgaoXZJiJbPI1lRvzKnqBJ8pM0Q7V9UIdJ3r9oWWvMUWB4ujgqJhq9tBPcPyaghula0horVDH9UJxfpA/IQtN4YSp+cGAFmL1KaYqNuYHSW8IshT8oN8ooPQABfMoQOAMKz2gSm+o/4xrxuDOqVG33vxcnGyuNGXl88psBMPu9zsTdISupiKzg/ORpmmP6JR5Q47t65edrLx2yAFZwmHJWbptnRGlztk/E1LOgbg344pzm+cjoc8vR/EHTZ95b/IH7m90AL9LbQtsFUWEZCbxCH1L9QFd6AWBaQhDekcUKNMLynUvmZzYUmMEUW7OdipqCoNeqNIDEvx6oNlf3Rgd8hGhSn5wiw6ChJctYyURIeoN+BzNIGUjQklvSDjIeYWCs4G4sAszswjdnaO5nD4xVq0eiRA599zTWaJfH05fHNSoR0JDmcf3xEHUEXrioOrpecSV3aC381RfXx2rS72gRgdc4cQ8gdFadoMG5yPVdaLSq/PQMPXuiwgleqE+phY8edlI0Y1eIBGZn1D3q7epFzK4OCIIvIPE0keEtvVCfKasOKrwsc4SXSanINTPE5txIFbF/Mfi4O2rxBu2zwGFHw/FwRk+/dYj1eSg2B/EfOh8A3eLuDAiGPRCHX+gRIfiGSQ0EKe/N33+gsHzl2oBh+fyLm0nItwfHcAHHNglr8E5fI9ekL808cWEv64HtKkXbrgoIojK8Slr/PS+hIOcVyjME6PV1ql8oPsj5IkB3P+eBNHfswd4s3dy0ekBOHj/cn9nWHrlwKLv4izfv+cgehLJ3zyvDUiXUFkvNPUHZXphC7fA4AOq6QVHNlu22thbwQ1o9l67ENf4IPoEF6CpAbI10wu36GAf48PDjNGhE72g9AbuD1+S2gxTROhGLySjn6ArHMe4nldoK0+0LzBI16f0lyvHthLrJ1Ltf8XBB3zKrL30zsHtUZp/xMECjrJ7O3rUCyAe95yEi12iF9rwB9roMBOHpQ0aZ4gxvsehxo55DF8Ibisi1IgONjjBYQsGgDt6QPKrswl89w0rT23rBbU3ODM4t827WSr3hoSDnFeokCfeRj+awC+Su951nsh9wRxr97kWeYVunm3MMXqCX27fHCzkQYYPw4Hc5LjslQN6gFv9jsfGHNT0B7l6JEbkM9978wfuFwyd7HVThljmD+yWGmWf3Enjtj6uuIkalbHX2qepPeCu6EDQLp5Y6jw/AHP44rMWIkIrekHFBJ/hdy5v7iBP9PZwxsx7GfrPlVP7OZ6iE5K65WD5LR6RVbjX9w85sJizgAvcLQdDeFmirN1d6oWy+YNBTiNMIQypfFEH8wcW9Z/FMybKzkfSYrM/uCfR1mEQHODC9ez7lIKdfzMHlM7Fll/cyo3+YmDqAVV6g3YOkaBztC+3/fnE8Qvcucw8t1ilB3SlFzIYWXv4Mwa2wRM0zRP5p7482eVVin+VK2cx/8UWY3G/LXFAkLsRvcsz2P2IHMjnL+yXmLXCQcSAePhUtfORGnJg8Ad1IsINx3wMIe8L8XkJ9/gDivw1hDMS2aqPCPfNH7QXETIYe8I5foTUw3XmlDIvwhQsdxCeAkC7utEW9YIWr37gZR7YLJ8rVMoPCCKrA4QbUlZ/8Ch6QY/FU6euKzvm4NcrVMkTPfHUspdoEaeKJ3iIXFmDsS2P+ZmJrRVV9nxHkZBf98Zih99pYt+eR/fPcoB4XGNP6wuEn+cxs5XTHwwcWIw5OJiKsv3ZaOCwGqcGPoReMNQniq8P5AM5r/MwnoHmGVTGH8TPXbQmZ2H/1/pJkDmoXp/YXC8U1qO2sEMhwdQDVriRpxssNtOJL03zbk04QHc8Gs5e+AveT6uAW9dO/WpRJVJcp6oQUrs31KxXFrug7OVqF+3f/Hr7WJyO6818s14f95/P0TmML/uzOLvdI0p0qFiv3Lz+ILY75xXuzRPNMwceYn44Ha5319/H9f58zI7zVbgk8bn+dzz1/YFy5YK5dYsQFtsKlOI4jzFCrOa1+/8UBw11Y+cc5HxAhO/RC33WJ96nF0zOshi3u3OhxV0MTYzpWC/0Va/82Hqht9p98Mi58n8c/AscFPuDdvRCP/uZ2tcLfUaKXqNAHgOFkK71Qsf7G/8lvfBweeL/APGzmcpyKpUIAAAAAElFTkSuQmCC">
+</head>
+
+<body>
+    <h1>Guardians Galaxy Gateways</h1>
+    <p class="caption">Where Adventure meets Joy </p>
+    <section class="img1">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <label for="inputEmail4" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Enter Email"
+                                required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputPassword4" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="inputPassword4" placeholder="Enter Password"
+                                required>
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress" class="form-label">User Name</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="Enter User Name"
+                                required>
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress" class="form-label">Mobile Number</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="Enter Mobile Number"
+                                required>
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St"
+                                required>
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress2" class="form-label">Address 2</label>
+                            <input type="text" class="form-control" id="inputAddress2"
+                                placeholder="Apartment, studio, or floor" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputCity" class="form-label">City</label>
+                            <input type="text" class="form-control" id="inputCity" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="inputState" class="form-label">State</label>
+                            <select id="inputState" class="form-select">
+                                <option selected>Choose...</option>
+                                <option>Andhra Pradesh</option>
+                                <option>Arunachal Pradesh</option>
+                                <option>Assam</option>
+                                <option>Bihar</option>
+                                <option>Chhattisgarh</option>
+                                <option>Goa</option>
+                                <option>Gujarat</option>
+                                <option>Haryana</option>
+                                <option>Himachal Pradesh</option>
+                                <option>Jharkhand</option>
+                                <option>Karnataka</option>
+                                <option>Kerala</option>
+                                <option>Madhya Pradesh</option>
+                                <option>Maharashtra</option>
+                                <option>Manipur</option>
+                                <option>Meghalaya</option>
+                                <option>Mizoram</option>
+                                <option>Nagaland</option>
+                                <option>Odisha</option>
+                                <option>Punjab</option>
+                                <option>Rajasthan</option>
+                                <option>Sikkim</option>
+                                <option>Tamil Nadu</option>
+                                <option>Telangana</option>
+                                <option>Tripura</option>
+                                <option>Uttar Pradesh</option>
+                                <option>Uttarakhand</option>
+                                <option>West Bengal</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="inputZip" class="form-label">Zip</label>
+                            <input type="text" class="form-control" id="inputZip">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="inputState" class="form-label">Interests</label>
+                            <select id="inputState" class="form-select">
+                                <option selected>Choose...</option>
+                                <option>Nature Exploration</option>
+                                <option>City Sightseeing</option>
+                                <option>Cultural Immersion</option>
+                                <option>Adventures</option>
+                                <option>Wildlife Safari</option>
+                                <option>Wildlife Safari</option>
+                                <option>Relaxing Beaches</option>
+                                <option>Hiking and Trekking</option>
+                                <option>Historical Sites</option>
+                            </select>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                        Check me out
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary"><a href="./Travel.html"
+                                        class="link">Continue</a></button>
+                            </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Boot strap Bundle  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

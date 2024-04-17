@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+body {
+    background-image: url("https://plus.unsplash.com/premium_photo-1661960937960-1883bf00f480?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGVyc29uJTIwb24lMjBtb3VudGFpbnxlbnwwfHwwfHx8MA%3D%3D");
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    color: RGB(0, 35, 102);
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 7%;
+}
+
+.caption {
+    text-align: center;
+    margin-top: 1%;
+    color: #4B0082;
+}
+
+.form-label {
+    color: White;
+    font-weight: bold;
+
+}
+
+.form-check-label {
+    color: White;
+    font-weight: bold;
+}
+
+.form-contro {
+    color: #4B0082;
+}
+
+.link {
+    text-decoration: none;
+    color: white
+}
+
+.btn {
+    background-color: #4B0082;
+    margin-bottom: 2%;
+}
+
+.btn:hover {
+    background-color: white !important;
+    color: blueviolet;
+}
+
+.formy {
+    margin-bottom: 5%;
+}

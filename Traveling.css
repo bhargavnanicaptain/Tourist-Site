@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    margin: 0;
+
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+.gif {
+    border-radius: 25px;
+}
+
+.navbar {
+    background-color: RGB(0, 35, 102);
+
+}
+
+.nav-link {
+    color: white !important;
+    font-size: 15px;
+}
+
+.well {
+    margin-top: 10%;
+    color: blueviolet;
+    text-align: center;
+}
+
+.head1 {
+    margin-top: 2%;
+    color: RGB(0, 35, 102);
+    text-align: center;
+}
+
+.caption {
+    color: #4B0082;
+    text-align: center;
+}
+
+/* CSS animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.well {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.head1 {
+    animation: fadeInUp 1s ease-in-out;
+    animation-delay: 0.2s;
+    /* Delay animation */
+}
+
+.caption {
+    animation: fadeInUp 1s ease-in-out;
+    animation-delay: 0.4s;
+    /* Delay animation */
+}
+
+.bgimg {
+    background-image: url("https://www.gonoise.com/cdn/shop/articles/16f45661868e38058cccb2c9e6d354f1.png?v=1655377811");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+
+    height: 100vh;
+    background-position: center;
+    margin-left: 0%;
+    margin-top: 3%;
+    margin: 0;
+    width: 100%;
+
+    transition: opacity 0.3s ease;
+    border-radius: 5%;
+
+}
+
+.bgimg:hover {
+    transform: scale(1.1);
+    opacity: 0.5;
+    /* Adjust opacity value as needed */
+    margin-top: 2%;
+}
+
+
+.p1:hover {
+    color: blue
+        /* Change color on hover */
+}
+
+
+
+
+p {
+    margin-right: 3%;
+}
+
+.sec2 {
+    margin-top: 3%;
+}
+
+.sec2 h2 {
+    text-align: center;
+    color: RGB(0, 35, 102);
+}
+
+.sec2 h3 {
+    color: #4B0082;
+    margin-left: 2%;
+}
+
+.sec2 p {
+    color: black;
+    text-align: justify;
+    margin-left: 3%;
+
+}
+
+.img1 {
+    border-radius: 25px;
+    margin-left: 5%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: opacity 0.3s ease;
+}
+
+.img1:hover {
+    opacity: 0.5;
+}
+
+.cimg {
+    aspect-ratio: 3/2;
+}
+
+.sec4 p {
+    text-align: center;
+}
+
+.btn {
+    align-items: center;
+    margin-left: 25%;
+}
+
+.accom {
+    text-align: center;
+    color: RGB(0, 35, 102);
+    margin-top: 3%;
+}
+
+.book {
+    text-align: center;
+    color: RGB(0, 35, 102);
+}
+
+.sec5 {
+    text-align: justify;
+    margin-left: 3%;
+}
+
+.formx {
+    display: flex;
+    justify-content: center;
+}
+
+.form-label {
+    color: RGB(0, 35, 102);
+    font-size: 15px;
+}
+
+.form-room {
+    border-radius: 5px;
+    color: black;
+    margin-left: 2%;
+}
+
+.a1 {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+.a2 {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+.btn1 {
+    background-color: gold;
+    color: white;
+    margin-left: 35%;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn1:hover {
+    background-color: RGB(0, 35, 102);
+    color: white;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.btn2 {
+    background-color: green;
+    color: green;
+    margin-left: 35%;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1%;
+}
+
+.btn2:hover {
+    background-color: RGB(0, 35, 102);
+    color: white;
+    border: none;
+    border-radius: 5px;
+
+}
+
+span {
+    color: red;
+}
+
+.abimg {
+    width: 50%;
+    height: 70%;
+    margin-left: 25%;
+    border-radius: 30px;
+    margin-top: 5%;
+
+
+}
+
+.sec6 {
+    background-color: RGB(0, 35, 102);
+    margin-top: 5%;
+}
+
+.sec6 h1 {
+    color: white;
+    text-align: center;
+    margin-top: 5%;
+
+}
+
+.sec6 p {
+    color: white;
+    text-align: justify;
+    margin-left: 3%;
+
+}
+
+.about {
+    margin-top: 2%;
+    font-style: italic;
+    font-weight: 900;
+}
+
+.fa-square-instagram {
+    color: rgb(214, 21, 54);
+    font-size: 20px;
+}
+
+.fa-whatsapp {
+    color: green;
+    font-size: 20px;
+}
+
+.fa-youtube {
+    color: red;
+    font-size: 20px;
+
+}
+
+.fa-linkedin {
+    color: hsl(240, 84%, 53%);
+    font-size: 20px;
+}
+
+.sec7 .col-12 i {
+    margin-right: 20px;
+    margin-top: 1%;
+    /* Adjust the margin to set the gap between icons */
+}
+
+.fa-hand-point-up {
+    color: black;
+    margin-left: 25%;
+}
+
+.sec7 {
+
+    background-color: skyblue;
+}
+
+.sec7 h5 {
+    color: black;
+}
+
+.icons {
+    margin-top: 1%;
+}
+
+.advertise {
+    margin-top: 2%;
+}
+
+.dest {
+    text-align: center;
+    color: RGB(0, 35, 102);
+    margin-top: 3%;
+}
+
+.copy {
+    text-decoration: none;
+    color: RGB(0, 35, 102);
+    font-weight: bold;
+}
+
+
+
+.copy:hover {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.copy:visited {
+    text-decoration: none;
+    color: orange;
+    font-weight: bold;
+
+}
+
+
+@media only screen and (max-device-width: 780px) {
+    .carousel-item .carousel-caption p {
+        font-size: 7px;
+    }
+
+    .carousel-item .carousel-caption h5 {
+        font-size: 17px;
+    }
+
+    .card {
+        margin-left: 20%;
+        margin-top: 1%;
+    }
+
+
+}
+
+@media only screen and (min-device-width: 782px) and (max-device-width : 850px) {
+    footer {
+        margin-top: 7%;
+    }
+}
+
+@media only screen and (min-device-width: 300px) and (max-device-width : 768px) {
+    footer {
+        margin-top: 7%;
+    }
+}
+
+@media only screen and (min-device-width : 1200px) {
+    .navbar {
+        font-size: 15px;
+        padding-left: 3%;
+
+    }
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6.5%;
+}
+
+footer .social-icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+footer .social-icon li {
+    list-style: none;
+}
+
+footer .social-icon li a {
+    font-size: 1em;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+footer .social-icon li a:hover {
+    transform: translateY(-10px);
+}
+
+footer .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: RGB(0, 35, 102) url("./wave.png");
+    background-size: 1000px 100px;
+}
+
+footer .wave#wave1 {
+    z-index: 1000;
+    /* Corrected z-index value */
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+
+@keyframes animateWave {
+    0% {
+        background-position-x: 1000px;
+        /* Corrected background property */
+    }
+
+    100% {
+        background-position-x: 0px;
+    }
+}
+
+footer .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_2 2s linear infinite;
+}
+
+@keyframes animateWave_2 {
+    0% {
+        background-position-x: 1000px;
+        /* Corrected background property */
+    }
+
+    100% {
+        background-position-x: 0px;
+    }
+}
+
+footer .wave#wave3 {
+    z-index: 998;
+    /* Different z-index value */
+    opacity: 0.3;
+    /* Different opacity value */
+    bottom: 20px;
+    /* Adjusted position */
+    animation: animateWave_3 4s linear infinite;
+}
+
+@keyframes animateWave_3 {
+    0% {
+        background-position-x: 1000px;
+    }
+
+    100% {
+        background-position-x: 0px;
+    }
+}
+
+footer .wave#wave4 {
+    z-index: 997;
+    /* Different z-index value */
+    opacity: 0.7;
+    /* Different opacity value */
+    bottom: 30px;
+    /* Adjusted position */
+    animation: animateWave_4 8s linear infinite;
+}
+
+@keyframes animateWave_4 {
+    0% {
+        background-position-x: 1000px;
+    }
+
+    100% {
+        background-position-x: 0px;
+    }
+}
+
+.hand {
+    margin-left: 5%;
+}
